@@ -38,7 +38,7 @@
         <section class="hero-section">
             <div class="container">
             <h1 class="hero-title">Effective Solutions for Your Business</h1>
-            <button class="hero-button" type="button">Order Service</button>
+            <button class="hero-button" data-modal-open type="button">Order Service</button>
             </div>
         </section>
         
@@ -342,18 +342,29 @@
             </svg></a>
             </li></ul>
     </div>
-    <form>
-        <label class="">Subscribe
-            <input>
-        </label>
-        <button>    </button>>
-    </form>>
+    <div class="footer-input-field">
+        <p class="footer-input-text">Subscribe</p>
+        <form class="footer-form">
+            <input 
+            class="footer-subs-field"
+            type="email"
+            name="footer-email"
+            id="footer-email"
+            placeholder="E-mail">
+        <button type="submit" class="footer-subs-btn">Subscribe
+          <svg class="subs-btn-icon" width="24" height="20">
+            <use href="./images/icons.svg#icon-plane"></use>
+          </svg>  
+        </button>
+        </form>
+     </div>
+    
     </div>
 </footer>
 
-<div class="backdrop is-open">
+<div class="backdrop" data-modal>
     <div class="modal-form">
-        <button class="modal-close-btn" type="button">
+        <button class="modal-close-btn" type="button" data-modal-close>
             <svg class="close-icon" width="8" height="8">
                 <use href="./images/icons.svg#icon-close"></use></svg> </button>
         <p class="modal-title">
@@ -364,7 +375,7 @@
             <label for="user-name" class="modal-label">Name</label>
             <div class="input-field-wrapper">
             <input 
-            type="tel" 
+            type="text" 
             class="modal-input-field" 
             name="user-name" 
             id="user-name">
@@ -407,14 +418,13 @@
                  name="user-comment"
                  id="user-comment"></textarea>
                 </div>
-
             <div class="checkbox-field">
                 <input
                 class="checkbox visually-hidden"
                 type="checkbox"
                 name="policy"
                 id="policy"
-                value="true"/>
+                value="true">
                 <label for="policy" class="checkbox-label">
                 <span class="custom-checkbox">
                     <svg class="custom-checkbox-icon" width="10" height="8">
@@ -425,13 +435,10 @@
                 </label>
                 </div>
                 <button type="submit" class="modal-submit-btn">Send</button> 
-            
-            </div>
-        </form>
-      
+            </form>
     </div>
-
 </div>
+<script src="./js/modal.js"></script>
 </body>
 
 </html>
