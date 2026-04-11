@@ -684,7 +684,7 @@ fill:#ffffff;
     border-radius: 4px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     resize:none;
-    padding: 8px;
+    padding: 8px 16px;
 }
 
 .textarea-field::placeholder{
@@ -710,9 +710,15 @@ font-weight: 400;
     margin-bottom: 8px;
 }
 
-.checkbox-field {
-    margin-top: 16px;
+.form-field:last-child {
+    margin-bottom: 16px;
 }
+
+.checkbox-field {
+    margin-top: 0;
+}
+
+
 .privacy-link{
     line-height: 1.33333;
     text-decoration: underline;
